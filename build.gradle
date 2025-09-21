@@ -2,6 +2,7 @@ plugins {
     id 'idea'
     id 'java-library'
     id 'maven-publish'
+    //id 'org.spongepowered.mixin' version '0.7.+'
     id 'net.neoforged.moddev.legacyforge' version '2.0.91'
 }
 
@@ -33,8 +34,8 @@ legacyForge {
     version = project.minecraft_version + '-' + project.forge_version
 
     parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
+        mappingsVersion = "2023.09.03"
+        minecraftVersion = "1.20.1"
     }
 
     // This line is optional. Access Transformers are automatically detected
@@ -143,7 +144,7 @@ dependencies {
 }
 
 // Uncomment the lines below if you wish to configure mixin. The mixin file should be named modid.mixins.json.
-/*
+
 mixin {
     add sourceSets.main, "${mod_id}.refmap.json"
     config "${mod_id}.mixins.json"
@@ -158,7 +159,7 @@ jar {
             "MixinConfigs": "${mod_id}.mixins.json"
     ])
 }
-*/
+
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.

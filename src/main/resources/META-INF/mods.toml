@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+issueTrackerURL="https://github.com/CreateTechified/UnshatteredCoreMod/issues/"
+clientSideOnly=false
+
+[[mods]]
+modId="unshatteredcore"
+version="1.0.0"
+displayName="UnshatteredCore" #mandatory
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+#logoFile="examplemod.png"
+#credits=""
+authors="wrldmap"
+displayTest="MATCH_VERSION"
+description='''The world's worst core mod for a great modpack.'''
+
+[[dependencies.unshatteredcore]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1.3,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.unshatteredcore]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1, 1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+#[features.unshatteredcore]
+#openGLVersion="[3.2,)"
